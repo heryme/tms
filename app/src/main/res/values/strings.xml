@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TMS</string>
+
+    <!-- Navigation Drawer-->
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--   ************ Fragment ***********    -->
+
+    <!-- WorkingTaskFragment -->
+
+    <string name="tv_urgent_fragment_running_task_text">Urgent</string>
+    <string name="tv_high_fragment_running_task_text">High</string>
+    <string name="tv_normal_fragment_running_task_text">Normal</string>
+    <string name="tv_low_fragment_running_task_text">Low</string>
+
+    <string-array name="groupByArray">
+        <item>Created</item>
+        <item>Last Modified</item>
+        <item>Priority</item>
+        <item>User</item>
+        <item>Project</item>
+    </string-array>
+
+    <!-- dialog_application_exit -->
+
+    <string name="tv_title_text">Are you sure want to exit?</string>
+    <string name="btn_yes_text">Yes</string>
+    <string name="btn_no_text">No</string>
+
+</resources>

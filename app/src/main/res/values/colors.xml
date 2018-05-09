@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#306B8D</color>
+    <color name="colorPrimaryDark">#054273</color>
+    <color name="colorAccent">#F9AB2E</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="tms_blue">#142b39</color>
+    <color name="tms_login_line">#66CEF4</color>
+    <color name="green_login">#4EAE0D</color>
+    <color name="gray_login">#F0F0F0</color>
+    <color name="darkgray">#7E7E7E</color>
+
+    <color name="btn_text_color">#428BCA</color>
+
+    <!-- ********** Working TaskFragment,OverDueTaskFragment And AssignedTaskFragment **** -->
+
+    <!--  Label Of the Spinner -->
+    <color name="tv_text_color">#428BCA</color>
+
+
+    <!-- ****************   TaskSubListAdapter ********************* -->
+
+    <!-- Set Priority Color For Star -->
+    <color name="urgent">#821000</color>
+    <color name="high">#CB4E2D</color>
+    <color name="normal">#23A615</color>
+    <color name="low">#FFD35C</color>
+
+    <!-- All Running Task List -->
+    <color name="all_running_task">#9FD878</color>
+
+    <!-- All Pause Task List -->
+    <color name="all_pause_task">#F0AD4E</color>
+
+    <!-- Task Info -->
+    <color name="task_info">#428BCA</color>
+    <color name="task_line">#A6D0F5</color>
+
+
+
+
+</resources>

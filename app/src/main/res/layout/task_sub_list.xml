@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Title"
+        android:textSize="@dimen/tv_normal_text_size"
+        android:textStyle="bold" />
+<!--
+    <ListView
+        android:id="@+id/lv_sub_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:dividerHeight="2dp"
+        android:smoothScrollbar="true"
+        android:scrollingCache="false"
+        android:animationCache="false">
+    </ListView>
+-->
+
+    <com.websopti.tms.utility.NonScrollListView
+        android:id="@+id/lv_sub_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:dividerHeight="2dp"
+        android:smoothScrollbar="true"
+        android:scrollingCache="false"
+        android:animationCache="false">
+    </com.websopti.tms.utility.NonScrollListView>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:clickable="false">
+
+    <LinearLayout
+        android:id="@+id/ll_main_group_by_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group By:"
+            android:textColor="@color/tv_text_color"
+            android:textSize="@dimen/tv_normal_text_size"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spn_main_groupby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/groupByArray"/>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_main_group_by_view"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:id="@+id/src_tasklist_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:fillViewport="true">
+         <!--<ListView
+            android:id="@+id/lv_main_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />-->
+
+        <com.websopti.tms.utility.NonScrollListView
+            android:id="@+id/lv_main_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:smoothScrollbar="true"
+            android:scrollingCache="false"
+            android:animationCache="false"/>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+<!-- This TextView is display when data not available-->
+    <TextView
+        android:id="@+id/tv_working_task_emptyview"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/tv_normal_text_size"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Record Available"
+        android:visibility="gone"/>
+</RelativeLayout>
